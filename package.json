@@ -1,7 +1,11 @@
 {
-  "name": "frontend",
+  "name": "desafio-conceitos-reactjs",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Lucas Gomes",
+    "email": "lucas.sbgomes@gmail.com",
+    "url": "https://gomes.eti.br/"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "axios-mock-adapter": "^1.18.1",

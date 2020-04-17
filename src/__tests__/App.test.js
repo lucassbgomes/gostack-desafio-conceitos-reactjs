@@ -32,11 +32,11 @@ describe("App component", () => {
 
     await actWait();
 
-    fireEvent.click(getByText("Adicionar"));
+    fireEvent.click(getByText("Add Repository"));
 
     await actWait();
 
-    expect(getByTestId("repository-list")).toContainElement(
+    expect(getByTestId("title")).toContainElement(
       getByText("Desafio ReactJS")
     );
   });
@@ -57,10 +57,10 @@ describe("App component", () => {
 
     await actWait();
 
-    fireEvent.click(getByText("Remover"));
+    fireEvent.click(getByText("delete"));
 
     await actWait();
 
-    expect(getByTestId("repository-list")).toBeEmpty();
+    expect(getByTestId("title")).toBeEmpty();
   });
 });

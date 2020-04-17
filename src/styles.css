@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,35 +7,101 @@
 }
 
 body {
-  font-size: 14px;
+  font: 400 14px Roboto, sans-serif;
+  color: #333;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
-div li {
+.container {
   display: flex;
-  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+  align-content: center;
+  justify-content: center;
 }
 
-div li + li {
-  margin-top: 15px;
+.container-form {
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 }
 
-button {
+.container-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container-form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font: 400 18px Roboto, sans-serif;
+  color: #333;
+  border: 0;
+  border-radius: 8px;
+  background-color: #f0f0f5;
+}
+.container-form .btn {
+  width: 100%;
+  height: 50px;
+  font: 700 18px Roboto, sans-serif;
   background: #7159c1;
   color: #fff;
   border: 0;
-  padding: 10px 15px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+.container-form input + input {
+  margin-top: 10px;
+}
+
+.container-list,
+.container-list table {
+  width: 100%;
+}
+.container-list table {
+  margin-top: 18px;
+  font: 400 18px Roboto, sans-serif;
+}
+.container-list table thead {
+  text-align: left;
+  background-color: #7159c1;
+  color: #fff;
+}
+.container-list table thead tr {
+  height: 40px;
+}
+
+.container-list table th,
+.container-list table td {
+  padding: 10px;
+}
+
+.container-list table tr.even {
+  background-color: #fafafa;
+}
+.container-list table tr.odd {
+  background-color: #f0f0f5;
+}
+.container-list table .td-actions {
+  text-align: center;
+}
+.container-list table td button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-list table td button span {
+  display: none;
+}
+.container-list table td button svg {
+  fill: #555;
+}
+.container-list table td button svg:hover {
+  fill: #ca4949;
 }
